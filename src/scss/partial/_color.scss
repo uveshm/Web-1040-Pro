@@ -1,0 +1,77 @@
+// --------------------------------------------------
+// Color
+// --------------------------------------------------
+
+
+
+:root {
+   --white-color: #ffffff;
+   --white-secondary-color: #F9FBFE;
+   
+   --black-color: #000000;
+   --black-secondary-color: #222222;
+   --black-3: #474747;
+
+   --blue-color: #0c1b3f;
+   --navy-blue-color: #0C2556;
+   --navy-blue-secondary-color: #132453;
+   --navy-blue-2: #071B41;
+
+   --gray-color: #8F9FBC;
+   --dark-gray-color: #324253;
+   --gray-3: #C1C1C1;
+
+   --menu-active-bg: #1F3663;
+
+   --logo-blue-color: #3c90ce;
+   --logo-gray-color: #65686a;
+
+   --logo-sky-blue-color:#538ec9;
+   --sky-blue-color:#3378FF;
+
+
+   
+}
+
+
+
+[data-theme="dark"] {
+
+   --white-color: #0c1b3f;
+   --white-secondary-color: #132453;
+
+   --gray-color: #FFFFFF;
+   --dark-gray-color: #FFFFFF;
+   
+   --navy-blue-color: #FFFFFF;
+   --logo-blue-color: #FFFFFF;
+   --navy-blue-2: #FFFFFF;
+
+   --logo-gray-color: #FFFFFF;
+   
+   --black-secondary-color: #FFFFFF;
+   --black-color: #FFFFFF;
+   --black-3: #fff;
+   
+   --gray-3: #fff;
+   --sky-blue-color:#fff;
+}
+
+
+
+
+$black-color: #000;
+
+$white-secondary-color: #F9FBFE; 
+$white-color: #ffffff;
+
+$navy-blue-color: #0C2556;
+$navy-blue-2: #071B41;
+$sky-blue-color: #3378FF;
+
+$dark-gray-color: #324253;
+$logo-gray-color: #65686a;
+$border-gray-color: #EBEBEB;
+$gray-3: #C1C1C1;
+
+$logo-blue-color: #3c90ce;

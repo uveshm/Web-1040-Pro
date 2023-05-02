@@ -1,0 +1,151 @@
+// Darkmode scss
+html[data-theme=dark] {
+   a {
+      &:hover {
+         color: var(--dark-gray-color);
+      }
+   }
+
+   // html changes
+   .navigaton-slider {
+      .nav-item {
+         &.active {
+
+            &>.nav-link {
+               background-color: var(--menu-active-bg);
+               color: $white-color;
+            }
+         }
+      }
+   }
+
+   //   nav icon change in dark mode
+   .navigaton-slider {
+      .nav-item {
+
+         &.active,
+         &:hover {
+            .icon {
+               .fill {
+                  fill: var(--dark-gray-color) !important;
+               }
+
+               .strock-fill {
+                  stroke: var(--dark-gray-color) !important;
+               }
+
+            }
+         }
+      }
+   }
+
+   .navigaton-slider {
+      .nav-item:hover {
+         &>.nav-link {
+            background-color: var(--menu-active-bg);
+            color: $white-color;
+         }
+      }
+   }
+
+   header {
+      .header-nav {
+
+         .icon {
+            .strock-fill {
+               // fill: var(--white-color);
+               stroke: var(--gray-color);
+            }
+         }
+
+         .my-profile {
+            .icon {
+               .strock-fill {
+                  stroke: #8F9FBC !important;
+               }
+            }
+            .profile-pic{
+               .strock-fill{
+                  stroke: var(--gray-color) !important;
+               }
+            }
+         }
+
+      }
+
+      .quick-find {
+         a.nav-link {
+            color: $white-color;
+         }
+         button.nav-link {
+            color: $white-color;
+         }
+
+         .profile-listing {
+            a.nav-link {
+               color: $dark-gray-color;
+            }
+         }
+      }
+
+
+      .sidebar {
+
+         .parent_li {
+            .nav-item.parent_li {
+               &:hover {
+                  >.nav-link {
+                     background-color: var(--white-secondary-color) !important;
+                  }
+               }
+            }
+         }
+      }
+
+
+   }
+
+   #Humburger {
+      @include media-breakpoint-down(lg) {
+         .burger {
+            background-color: $black-color;
+         }
+
+         &::before {
+            top: 5px;
+            background-color: $black-color;
+         }
+
+         &::after {
+            bottom: 4px;
+            background-color: $black-color;
+         }
+      }
+   }
+
+
+
+   // icons hover effect
+   .icon-links {
+      .icon {
+
+         &:hover {
+            background-color: rgb(255 255 255 / 73%);
+         }
+      }
+
+      .link {
+
+         a {
+
+            &:hover {
+               color: rgb(255 255 255 / 73%);
+            }
+         }
+
+      }
+   }
+
+
+
+}

@@ -1,0 +1,50 @@
+
+// Background image Path
+// ------------------------------
+$imgPath: '/web-1040-pro/dist/images'; 
+
+
+// Usage
+// div{
+   // background-image: url(#{$bg-imgPath}/img.jpg);
+// }
+
+ 
+
+
+ 
+
+@mixin montserrat-normal() { 
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+}
+// Usage
+// div{
+   // @include montserrat-normal();
+// }
+
+
+
+@mixin montserrat-medium() { 
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+}
+// Usage
+// div{
+   // @include montserrat-medium();
+// }
+
+
+
+@mixin montserrat-bold() { 
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+}
+// Usage
+// div{
+   // @include montserrat-bold();
+// }
+
