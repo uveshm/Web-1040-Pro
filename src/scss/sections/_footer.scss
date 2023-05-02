@@ -1,0 +1,85 @@
+footer{
+   background-color: var(--white-color);
+   color: var(--dark-gray-color);
+   min-height: 50px;
+   @include p(10px 0);
+   @include flexbox;
+   @include align-items(center);
+   z-index: 99999 !important;
+
+   .navigaton-slider{
+      padding: 0 15px;
+      position: relative;
+      height: 45px;
+
+      .bottom-link{
+         // @include position(absolute);
+         // bottom: 5px;
+         left: 15px;
+         width: calc(100% - 30px);
+         position: absolute;
+         bottom: 0;
+         background-color: var(--white-color);   
+         background-color: var(--logo-sky-blue-color);
+         border-radius: 5px;
+         
+         .nav-item{
+            background-color: var(--logo-sky-blue-color);
+            border-radius: 5px;
+            
+            ul{
+               .nav-item{
+                  padding: 0 5px;
+               }
+               .nav-link {
+                  background-color: var(--white-color);   
+                  border: 1px solid var(--white-color);
+                  &:hover{
+                     background-color: var(--logo-sky-blue-color);
+                  }
+               }
+            }
+         }
+
+         .apps-dd{
+            @include position(relative);
+            bottom: 0;
+            left: 0px;
+            margin: 0;
+            @include flexbox();
+            @include flex-direction(column-reverse);
+            .nav-link {
+      
+               .iq-arrow-right{
+                  @include transform(rotate(0deg) !important);
+               }
+              
+            }
+            &.open{
+               box-shadow: 0px 3px 20px rgb(0 0 0 / 5%);
+               .nav-link {
+                  .iq-arrow-right{
+                     @include transform(rotate(-90deg) !important);
+                  }
+               }
+            }
+         }
+       
+      }
+      
+   }
+   .footer-wrapper{
+      width: 100%;
+   }
+   .footer-nav {
+      li{
+         + li{
+            @include ml(10px);
+            @include media-breakpoint-up(xl) {
+               @include ml(20px);
+            }
+         }
+      }
+   }
+}
+

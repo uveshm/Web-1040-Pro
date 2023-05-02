@@ -1,0 +1,30 @@
+.btn{
+   @include border-radius(0);  
+   @include p(10px 25px);
+   @include font-weight(700);
+   @include font-size(18px);
+   border: 0;
+   outline: inherit;
+   @include box-shadow(inherit !important);
+   text-transform: uppercase;
+   letter-spacing: 1px;
+
+}
+
+.btn-primary{
+   background-color: var(--navy-blue-color);
+   color: var(--white-color);
+   &:hover, &:focus, &:active{
+      background-color: var(--menu-active-bg) !important;
+   }
+}
+
+.btn-secondary{
+   background-color: var(--sky-blue-color);
+   color: var(--white-color);
+   &:hover, &:focus, &:active{
+      background-color: var(--menu-active-bg) !important;
+   }
+}
+
+

@@ -1,0 +1,55 @@
+// map scss
+.map-section {
+
+   @include media-breakpoint-down(lg) {
+      margin-bottom: 2rem;
+   }
+
+   #us-map {
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      #path67 {
+         fill: none !important;
+         stroke: $gray-3 !important;
+         cursor: default;
+      }
+   }
+
+   #info-box {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 1;
+      background-color: $white;
+      border: 1px solid $navy-blue-color;
+      border-radius: 5px;
+      padding: 5px;
+   }
+
+   .state-active,
+   .circle {
+      fill: $logo-blue-color;
+
+      &:hover {
+         stroke: $navy-blue-color !important;
+         stroke-width: 2px;
+         stroke-linejoin: round;
+         fill: $navy-blue-color !important;
+         cursor: pointer;
+      }
+
+   }
+}
+
+
+
+.form-section {
+   margin: 1.5rem 0;
+   p {
+      color: var(--navy-blue-color);
+   }
+
+}
